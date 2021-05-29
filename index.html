@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="font/fontaswesome/css/all.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/animation2.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="slide.js"></script>
+    <title>WEBSITE DONG DUONG/ HOME</title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        });
+    </script>
+
+    <!-- CSS -->
+    <style>
+        #wrapper {
+
+            position: relative;
+        }
+
+        /* CSS HEADER */
+        #header {
+            background-color: white;
+            display: flex;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            padding-right: 200px;
+            padding-left: 60px;
+            justify-content: center;
+            /* min-height: 350px; */
+        }
+
+        #main-menu {
+            padding-top: 30px;
+            display: inline-flex;
+        }
+
+        #menu-header-button>a {
+            position: relative;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 5px 20px;
+            display: block;
+            color: #737372;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        #menu-header-button>a:hover {
+            color: black;
+            transform: scale(1.1);
+            border-bottom: 3px solid #d9c066;
+        }
+
+        .menu {
+            position: relative;
+
+        }
+
+        .sub-menu {
+            margin-top: 10px;
+            list-style: none;
+            padding: 0px;
+
+        }
+
+        ul.sub-menu a {
+
+            position: relative;
+            display: none;
+            color: white;
+            text-transform: uppercase;
+            text-align: left;
+            font-size: 13px;
+            line-height: 40px;
+            font-weight: 500;
+            padding: 10px;
+            background-color: #d9c066;
+            opacity: 0.85;
+            transition: all 0.5s;
+
+        }
+
+        .menu:hover a {
+            display: block;
+            transition: all 0.5s;
+
+        }
+
+        ul.sub-menu a:hover {
+            color: black;
+            font-weight: 500;
+        }
+
+
+        #contact {
+            margin-top: 25px;
+            display: block;
+            height: 47px;
+            width: 154px;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            background-image: url(images/contact\ button.png);
+            background-size: contain;
+            padding-top: 10px;
+            margin-left: 25px;
+        }
+
+        /* CSS HEADER */
+
+        /* CSS CONTENT */
+
+
+        .item {
+            justify-self: center;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 1920px;
+            margin: 0px auto;
+        }
+
+        .item .chu-chay {
+            position: absolute;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
+            color: white;
+            font-style: italic;
+            text-align: center;
+            animation: chu-chay 5s infinite;
+
+        }
+
+        .item .hinh-chay {
+            position: absolute;
+            display: block;
+            /* margin-top: 130px; */
+
+            animation: hinh-chay 5s infinite;
+        }
+
+        .item .hinh-nen {
+            opacity: 1;
+        }
+
+        /* CSS HIGH-LIGHT START */
+        .high-light {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            /* width: 1920px; */
+            height: 450px;
+            margin: 0px auto;
+            margin-top: 0px;
+        }
+
+        .high-light-box {
+            width: 300px;
+            height: 400px;
+            /* background-color: tomato; */
+            margin: 0px 10px;
+            display: flex;
+
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            transition: 0.3s;
+        }
+
+        .high-light-box:hover {
+            transform: scale(1.1);
+            background-color: rgb(240, 240, 240);
+        }
+
+        .high-light-images {
+            display: block;
+            width: 300px;
+        }
+
+        .high-light-text {
+            margin-top: 15px;
+            display: block;
+            width: 300px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: bold;
+            font-size: 17px;
+            color: #444444;
+
+        }
+
+        .high-light-symbol {
+            margin-left: 125px;
+            display: block;
+            width: 300px;
+            background-position: center;
+            margin-bottom: 5px;
+        }
+
+        /* CSS HIGH-LIGHT END */
+
+        /* CSS WELCOME START */
+        .welcome {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+            width: 870px;
+            margin: 0px auto;
+            height: 450px;
+
+        }
+
+        .welcome-greeting {
+            margin-top: 0px;
+            height: 135px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 25px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            color: #444444;
+            background-image: url(images/gach-chan-1.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: bottom;
+            margin-bottom: 40px;
+        }
+
+        .welcome-noi-dung {
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: #444444;
+            opacity: 0.9;
+            /* background-color: teal; */
+            height: 100px;
+            margin-bottom: 50px;
+
+        }
+
+        .welcome-seemore>a {
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            height: 100px;
+            width: 300px;
+            background-color: #87a2a8;
+            border-radius: 20px;
+            box-sizing: border-box;
+            text-decoration: none;
+            transition: 0.5s;
+            padding: 35px 80px;
+            transition: 0.5s;
+            margin-bottom: 40px;
+            margin-top: 0px;
+        }
+
+        .welcome-seemore {
+            transition: 0.5s;
+        }
+
+        .welcome-seemore:hover {
+            transform: scale(1.1);
+        }
+
+        /* CSS WELCOME END */
+
+        /* CSS HISTORY START*/
+        .history {
+            position: relative;
+            height: 666px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .histoty-text {
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            display: block;
+            text-align: right;
+            color: white;
+            font-size: 23px;
+            box-sizing: border-box;
+            margin: 150px 300px;
+            width: 1100px;
+            animation: history-text 15s infinite;
+            order: 1;
+        }
+
+        .history-hinh-chay {
+            position: absolute;
+            display: block;
+            margin-top: 60px;
+            margin-left: 1200px;
+            animation: history-hinh-chay 15s infinite;
+            order: 2;
+        }
+
+        .history-hinh-nen {
+            position: relative;
+            display: block;
+            opacity: 1;
+            order: 3;
+            animation: history-hinh-nen 15s infinite;
+            opacity: 1;
+
+        }
+
+
+
+        /* CSS HISTORY END*/
+
+        /* CSS RESOUCE START*/
+        .resouce {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            height: 790px;
+        }
+
+        .resouce-text {
+            margin-top: 20px;
+            position: absolute;
+            /* left: 41.5%; */
+            /* margin-left: -80px; */
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .resouce-box {
+            margin-top: 100px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .resouce-box .box-1 {
+            width: 400px;
+            height: 425px;
+            background-color: #87a2a8;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px 40px;
+            justify-content: center;
+            align-content: space-between;
+            transition: 0.4s;
+        }
+
+        .resouce-box .box-1:hover {
+            transform: scale(1.1);
+        }
+
+        /* CODE CSS RESOUCE END*/
+        .box-hinh-nen>a {
+            display: block;
+            /* margin-top: 50px; */
+            box-sizing: border-box;
+            opacity: 1;
+            width: 400px;
+
+        }
+
+        .box-text>a {
+            display: block;
+            box-sizing: border-box;
+            padding-bottom: 45px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .resouce-seemore>a {
+            position: absolute;
+            bottom: 8%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            height: 100px;
+            width: 300px;
+            background-color: #87a2a8;
+            border-radius: 20px;
+            padding-top: 30px;
+            box-sizing: border-box;
+            text-decoration: none;
+            transition: 0.5s;
+            margin-left: -150px;
+        }
+
+        .resouce-seemore>a:hover {
+            transform: scale(1.1);
+        }
+
+        /* CSS RESOUCE */
+
+
+
+
+
+        /* CSS CONTENT */
+
+        /* CSS FOOTER */
+
+        #footer {
+            /* width: 1920px; */
+            display: flex;
+            flex-wrap: nowrap;
+            height: 150px;
+            background-color: #5b5b5b;
+            align-content: center;
+            justify-content: center;
+            margin: 0px auto;
+            /* padding-bottom: 20px; */
+        }
+
+        #logo-footer {
+            display: block;
+            box-sizing: border-box;
+            width: 150px;
+            margin: 15px 70px;
+            /* background-color: yellow; */
+
+        }
+
+        #menu-footer {
+            box-sizing: border-box;
+            width: 280px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 30px;
+            margin-top: 10px;
+
+        }
+
+        .menu-footer-button {
+            width: 120px;
+            height: 30px;
+            box-sizing: border-box;
+            color: white;
+            margin: 10px;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 18px;
+            transition: 0.2s;
+        }
+
+        .menu-footer-button:hover {
+            font-size: 18px;
+            color: #d9c066;
+            text-decoration: none;
+            transform: scale(1.1);
+
+        }
+
+        #address {
+            color: white;
+            display: block;
+            margin-left: 200px;
+            margin-top: 20px;
+            padding-left: 20px;
+            font-size: 20px;
+            line-height: 30px;
+            box-sizing: border-box;
+            width: 650px;
+            background-image: url(images/que.png);
+            background-position: left;
+            background-repeat: no-repeat;
+            background: size 5px;
+
+        }
+
+
+        /* CSS FOOTER END */
+
+        /* CSS COPYRIGHT START*/
+        #copyright {
+            /* display: flex;
+            justify-content: center; */
+            color: white;
+            background-color: #5b5b5b;
+            height: 120px;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 17px;
+            box-sizing: border-box;
+
+        }
+
+        /* CSS COPYRIGHT END*/
+        #backtop {
+            width: 120px;
+            height: 30px;
+            color: white;
+            font-size: 16px;
+            background: rgb(170, 170, 170);
+            opacity: 0.7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 60px;
+            right: -35px;
+            transform: rotate(90deg);
+            cursor: pointer;
+
+        }
+    </style>
+
+
+    <!-- CSS -->
+
+
+    <div id="wrapper">
+
+        <!-- header -->
+        <div id="header" class="text-center text-uppercase">
+            <div class="container">
+                <a id="logo" href="index.html"> <img src="images/logo header.png" alt=""></a>
+            </div>
+            <div class="container">
+                <nav>
+                    <ul id="main-menu" type="none">
+                        <li id="menu-header-button"> <a href="index.html"> Trang Chủ </a></li>
+                        <li id="menu-header-button"> <a href="intro.html"> Giới Thiệu </a></li>
+                        <li id="menu-header-button"> <a href="seed.html"> Giống cây trồng </a></li>
+                        <li id="menu-header-button"> <a href="resource.html"> Vùng nguyên liệu </a></li>
+                        <li id="menu-header-button"> <a href="factory.html"> Nhà máy sản xuất </a></li>
+                        <li id="menu-header-button" class="menu"> <a href="product.html"> Dòng sản phẩm </a>
+                            <ul class="sub-menu">
+                                <li> <a href="product1.html"> Ván sàn, Ván ghép thanh </a></li>
+                                <li> <a href="product2.html"> Bán thành phẩm </a></li>
+                                <li> <a href="product3.html"> Sản phẩm hoàn thiện </a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-header-button"> <a href="news.html"> Tin tức </a></li>
+
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="container">
+                <a id="contact" href="contact.html"><i class="fas fa-phone-alt"></i> Liên Hệ</a>
+            </div>
+        </div>
+        <!-- end header -->
+
+        <!-- wp-content -->
+        <div id="wp-content">
+
+            <div id="bao-item" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="hinh-chay">
+                        <a href=""><img src="images/hinh chay.png" alt=""></a>
+                    </div>
+                    <div class="chu-chay">
+                        <h2>SỨ MỆNH VÀ <br> TẦM NHÌN</h2>
+                    </div>
+
+                    <div class="hinh-nen">
+                        <a href=""><img src="images/slide1.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hinh-chay">
+                        <a href=""><img src="images/hinh chay.png" alt=""></a>
+                    </div>
+                    <div class="chu-chay">
+                        <h2>SỨ MỆNH VÀ <br> TẦM NHÌN</h2>
+                    </div>
+
+                    <div class="hinh-nen">
+                        <a href=""><img src="images/slide2.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hinh-chay">
+                        <a href=""><img src="images/hinh chay.png" alt=""></a>
+                    </div>
+                    <div class="chu-chay">
+                        <h2>SỨ MỆNH VÀ <br> TẦM NHÌN</h2>
+                    </div>
+
+                    <div class="hinh-nen">
+                        <a href=""><img src="images/slide3.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hinh-chay">
+                        <a href=""><img src="images/hinh chay.png" alt=""></a>
+                    </div>
+                    <div class="chu-chay">
+                        <h2>SỨ MỆNH VÀ <br> TẦM NHÌN</h2>
+                    </div>
+
+                    <div class="hinh-nen">
+                        <a href=""><img src="images/slide4.png" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="high-light">
+            <div class="high-light-box">
+                <div class="high-light-text"> SẢN PHẨM VÀ ỨNG DỤNG</div>
+                <div class="high-light-symbol"><img src="images/symbol.png" alt=""> </div>
+                <div class="high-light-images"><img src="images/hight-light-1.png" alt=""> </div>
+            </div>
+            <div class="high-light-box">
+                <div class="high-light-text"> VÙNG NGUYÊN LIỆU</div>
+                <div class="high-light-symbol"><img src="images/symbol.png" alt=""> </div>
+                <div class="high-light-images"><img src="images/hight-light-2.png" alt=""> </div>
+            </div>
+            <div class="high-light-box">
+                <div class="high-light-text"> NHÀ MÁY SẢN XUẤT</div>
+                <div class="high-light-symbol"><img src="images/symbol.png" alt=""> </div>
+                <div class="high-light-images"><img src="images/hight-light-3.png" alt=""> </div>
+            </div>
+            <div class="high-light-box">
+                <div class="high-light-text">SỨ MỆNH</div>
+                <div class="high-light-symbol"><img src="images/symbol.png" alt=""> </div>
+                <div class="high-light-images"><img src="images/hight-light-4.png" alt=""> </div>
+            </div>
+        </div>
+        <div class="welcome">
+            <div class="welcome-greeting">
+                <h2>CHÀO MỪNG ĐẾN VỚI <br>
+                    CÔNG TY GỖ ĐÔNG DƯƠNG</h2>
+            </div>
+            <div class="welcome-noi-dung">
+                <p>Tại đây, chúng tôi không ngừng sáng tạo, phấn đấu cung cấp những sản phẩm và dịch vụ chất lượng cao
+                    phục vụ khách hàng, đối tác, mang lại cuộc sống phong phú về tinh thần, đầy đủ về vật chất cho cán
+                    bộ nhân viên, khuyến khích tạo ra nhiều giá trị mới cho công ty nói riêng và xã hội nói chung.</p>
+            </div>
+            <div class="welcome-seemore">
+                <a href="intro.html">XEM THÊM</a>
+            </div>
+        </div>
+        <div class="history">
+            <div class="history-hinh-nen">
+                <img src="images/lich-su.png" alt="">
+            </div>
+            <div class="histoty-text">
+                <h2> LỊCH SỬ CÔNG TY</h2> <br>
+                <P> Được thành lập từ năm 2007, hoạt động trong lĩnh vực trồng rừng và chăm sóc rừng lấy gỗ theo quy
+                    hoạch. Nhưng để phát triển ngành lâm nghiệp bền vững thì không chỉ thực hiện nhiệm vụ đó mà còn phải
+                    mở rộng lĩnh vực hoạt động, tức là phải thực hiện khép kín từ khâu trồng đến chế biến tất cả các sản
+                    phẩm lâm sản của mình. Do vậy, Công ty cổ phần gỗ Đông Dương tiếp tục xây dựng Nhà máy chế biến gỗ
+                    tại Cụm công nghiệp Tân Thành, huyện Hàm Yên, tỉnh Tuyên Quang trên diện tích 3ha. Với mục tiêu cung
+                    cấp các sản phẩm như: ván sàn, ván ghép thanh, các sản phẩm trang trí nội ngoại thất có giá trị,
+                    chất lượng cao thỏa mãn nhu cầu tiêu dùng trong nước và xuất khẩu.</P>
+            </div>
+            <div class="history-hinh-chay">
+                <a href=""><img src="images/hinh-chay-2.png" alt=""> </a>
+            </div>
+
+        </div>
+
+        <div class="resouce">
+            <div class="resouce-text">
+                <h2> CƠ SỞ VẬT CHẤT</h2>
+            </div>
+            <div class="resouce-box">
+
+                <div class="box-1"><a href=""></a>
+                    <div class="box-hinh-nen"> <a href=""><img src="images/nha-xuong.png" alt=""></a></div>
+                    <div class="box-text"> <a href="">NHÀ XƯỞNG CHẾ BIẾN GỖ</a> </div>
+                </div>
+                <div class="box-1"><a href=""></a>
+                    <div class="box-hinh-nen"> <a href=""><img src="images/lo-say.png" alt=""></a></div>
+                    <div class="box-text"> <a href="">LÒ SẤY GỖ</a> </div>
+                </div>
+                <div class="box-1"><a href=""></a>
+                    <div class="box-hinh-nen"> <a href=""><img src="images/trang-thiet-bi.png" alt=""></a></div>
+                    <div class="box-text"> <a href="">TRANG THIẾT BỊ HIỆN ĐẠI</a> </div>
+                </div>
+
+            </div>
+            <div class="resouce-seemore">
+                <a href="product.html">XEM THÊM</a>
+            </div>
+        </div>
+    </div>
+    <!-- end wp-content -->
+
+    <!-- footer  -->
+    <div id="footer">
+        <div id="logo-footer" class="container">
+            <a id="logo" href="index.html"> <img src="images/logo footer.png" alt=""></a>
+        </div>
+        <div id="menu-footer" class="container">
+            <a class="menu-footer-button" href="index.html"> TRANG CHỦ</a>
+            <a class="menu-footer-button" href="intro.html"> GIỚI THIỆU</a>
+            <a class="menu-footer-button" href="product.html"> SẢN PHẨM</a>
+            <a class="menu-footer-button" href="project.html"> DỰ ÁN</a>
+            <a class="menu-footer-button" href="news.html"> TIN TỨC</a>
+            <a class="menu-footer-button" href="contact.html"> LIÊN HỆ</a>
+        </div>
+        <div id="address" class="container">
+            <p>CÔNG TY CỔ PHẦN GỖ ĐÔNG DƯƠNG <br>
+                Địa chỉ: Tổ dân phố Tân An, Thị trấn Tân Yên, Huyện Hàm Yên,<br>
+                Tỉnh Tuyên Quang, Việt Nam <br>
+                <i class="fas fa-phone-alt"></i> 02076292699 <i> </i> <i class="fas fa-envelope"></i>
+                dongduonggreats@gmail.com
+            </p>
+        </div>
+    </div>
+    <!-- end footer  -->
+
+    <!-- copyright -->
+    <div id="copyright" class="">
+        <hr>
+        <br>
+        <p> <i class="far fa-copyright"></i> copyright 2021. All Rights Reserved. </p>
+    </div>
+    <!-- end copyright -->
+    </div>
+    <div id="backtop">
+        <i class="fas fa-angle-left">&nbsp;</i>
+         Back To Top
+    </div>
+
+</body>
+
+<script>
+$(function(){
+$(window).scroll(function () {
+if ($(this).scrollTop()) $("#backtop").fadeIn();
+else $("#backtop").fadeOut();
+});
+$("#backtop").click(function () {
+$("body,html").animate({scrollTop: 0}, "slow");
+});
+});
+</script>
+
+</html>
